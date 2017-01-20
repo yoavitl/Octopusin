@@ -9,14 +9,9 @@ public class OctopusArmLink : MonoBehaviour {
 	public float _slowFactor; 
 	public float _linksDistanceFactor; 
 	public float _heightFactor;
-	private float _minHeight;
-	private float _maxHeight;
-	private float _minDistance;
-	private float _maxDistance;
 	private int _direction; 
 
-	private const KeyCode RIGHT = KeyCode.D;
-	private const KeyCode LEFT = KeyCode.A;
+
 
 
 
@@ -24,19 +19,19 @@ public class OctopusArmLink : MonoBehaviour {
 	void Start () {
 		updateIndex ();
 		_arm = GetComponentInParent<OctopusArm> ();
+		updateFromArm ();
+	}
+
+	public void updateFromArm(){
 		_slowFactor = _arm.slowFactor;
 		_linksDistanceFactor = _arm.linksDistanceFactor;
 		_direction = _arm.direction; 
-		_minHeight = _arm.minHeight;
-		_maxHeight = _arm.maxHeight;
-		_minDistance = _arm.minDistance;
-		_maxDistance = _arm.maxDistance;
 		_heightFactor = _arm.heightFactor;
-
 	}
 
 	// Update is called once per frame
 	void Update () {
+		updateFromArm ();
 		updateIndex ();
 		float x = (Time.time / _slowFactor) % (2f * Mathf.PI);
 		float move = x + _armIndex;
@@ -50,53 +45,6 @@ public class OctopusArmLink : MonoBehaviour {
 		*/
 
 
-	}
-
-	void FixedUpdate() {
-		/* ===== Movement ==== */
-	
-		switch (_direction) {
-
-		case 1: //Right
-			if (Input.GetKey (RIGHT)) { //move right
-				Expand();
-			} else { //move left
-				Contract();
-			}
-			break; 
-		case -1: //Left
-			if (Input.GetKey (LEFT)) { //move left
-				Expand();
-			} else { //move right
-				Contract();
-			}
-			break; 
-		}
-	}
-
-
-	//TODO: understand why clamp doesnt work perfect.
-
-	private float ChangeHeight(float factor){
-		_heightFactor = Mathf.Clamp(_heightFactor * factor, _minHeight, _maxHeight); 
-		return _heightFactor;
-	}
-	private float ChangeDistance(float factor){
-		_linksDistanceFactor = Mathf.Clamp(_linksDistanceFactor * factor, _minDistance, _maxDistance); 
-		return _linksDistanceFactor;
-	}
-	private float ChangeSpeed(float factor){
-		_slowFactor *= factor; 
-		return _slowFactor;
-	}
-
-	private void Expand(){
-		ChangeHeight (0.95f);
-		ChangeDistance (1.05f);
-	}
-	private void Contract(){
-		ChangeDistance (0.995f);
-		ChangeHeight (1.005f);
 	}
 
 

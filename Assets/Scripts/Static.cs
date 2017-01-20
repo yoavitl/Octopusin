@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Point : MonoBehaviour {
+public class Static : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,5 +13,4 @@ public class Point : MonoBehaviour {
 	void Update () {
 		
 	}
-		
 }
