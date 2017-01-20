@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 public class CameraFollow : MonoBehaviour
-{
+{	
 	private bool shaking;
 	private Transform _transform;
 
