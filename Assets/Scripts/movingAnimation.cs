@@ -9,11 +9,12 @@ public class movingAnimation : MonoBehaviour {
 	public double GetAngle(Vector2 a, Vector2 b)
 	{
 		double angle = Mathf.Atan2 (a.y - b.y, a.x - b.x);
-		Debug.Log (angle);
+		//Debug.Log (angle);
 		return angle;
 	}
 
 	void Start () {
+		cam = Camera.main;
 		_transform = this.transform;
 	}
 
