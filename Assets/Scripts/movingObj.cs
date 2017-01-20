@@ -17,8 +17,9 @@ public class movingObj : MonoBehaviour {
 			_transform.localPosition = new Vector3 (_transform.position.x, _transform.position.y, _transform.position.z + 1);
 			_transform.localScale += new Vector3 (1F * growthRate , 1F * growthRate, 0);
 		}
-
 		if (_transform.position.z > cam.transform.position.z) 
 			Destroy (gameObject);	
 	}
+
+
 }
