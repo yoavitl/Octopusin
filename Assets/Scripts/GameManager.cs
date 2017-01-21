@@ -86,9 +86,9 @@ int characterType,
 			//print ("adding point " + id + " in " + delay + " seconds");
 			yield return new WaitForSeconds (csi.launchTime);
 			GameObject go = (GameObject)GameObject.Instantiate (characterPrefabs [csi.characterType], csi.startPosition, Quaternion.identity);
-			//movingObj mo = go.GetComponent<movingObj> ();
-			//mo.growthRate = csi.growthRate; 
-			//mo.decelrationRate = csi.decelrationRate;
+			movingObj mo = go.GetComponent<movingObj> ();
+			mo.growthRate = -csi.growthRate; 
+			mo.decelrationRate = csi.decelrationRate;
 			go.transform.parent = _characters.transform;
 		} else {
 			// Lost / Paused
