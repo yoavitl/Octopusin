@@ -21,9 +21,14 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] characterPrefabs;
 	public float startingDistance = 30f;
 
+	public int Score;
+	public float health; 
+
 	// Use this for initialization
 	void Start () {
-		
+		Score = 0;
+		health = 3f;
+
 		setExampleLevels ();
 		_characters = GameObject.Find ("Characters");
 		if (isDemo) {
@@ -70,6 +75,18 @@ public class GameManager : MonoBehaviour {
 		} else {
 			// Lost / Paused
 		}
+	}
+
+	public void AddScore (int newScoreValue)
+	{
+		Score += newScoreValue;
+		Debug.Log ("score = " + Score);
+	}
+
+	public void RemoveLife ()
+	{
+		health -= 0.25f;
+		Debug.Log ("Current health = " + health);
 	}
 
 }
