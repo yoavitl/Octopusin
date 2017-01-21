@@ -20,7 +20,7 @@ public class Octopus : MonoBehaviour {
 		if(!hurt.Contains(other.GetInstanceID())){
 			hurt.Add (other.GetInstanceID ());
 
-
+			Debug.Log ("hurt");
 
 		}
 	}
