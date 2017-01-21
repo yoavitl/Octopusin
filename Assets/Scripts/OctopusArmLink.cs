@@ -4,45 +4,47 @@ using UnityEngine;
 
 public class OctopusArmLink : MonoBehaviour {
 
+
 	private int _armIndex;
 	private OctopusArm _arm; 
-	public float _slowFactor; 
-	public float _linksDistanceFactor; 
-	public float _heightFactor;
-	private int _direction; 
-
-
-
-
+	
+	public Queue<float> previousLinkYLocations; 
+	public Queue<float> previousLinkXLocations; 
 
 	// Use this for initialization
 	void Start () {
 		updateIndex ();
 		_arm = GetComponentInParent<OctopusArm> ();
-		updateFromArm ();
+		previousLinkXLocations = new Queue<float>();
+		previousLinkYLocations = new Queue<float>();
+		for (int i = 0; i < _arm.delay; i++) {
+			previousLinkYLocations.Enqueue(transform.position.y);
+			previousLinkYLocations.Enqueue(transform.position.x);
+		}
 	}
 
 	public void updateFromArm(){
-		_slowFactor = _arm.slowFactor;
-		_linksDistanceFactor = _arm.linksDistanceFactor;
-		_direction = _arm.direction; 
-		_heightFactor = _arm.heightFactor;
+
 	}
 
 	// Update is called once per frame
 	void Update () {
-		updateFromArm ();
 		updateIndex ();
-		float x = (Time.time / _slowFactor) % (2f * Mathf.PI);
-		float move = x + _armIndex;
-		this.transform.position = new Vector2 (_armIndex * _linksDistanceFactor * _direction, Mathf.Sin (move) * _heightFactor);
+		float x, y;
+		if (_armIndex == 0) {
+			x = _arm.direction;
+			float h = (Time.time / _arm.slowFactor) % (2f * Mathf.PI);
+			y = Mathf.Sin (h) * _arm.heightFactor;
+		} else {
+			previousLinkXLocations.Enqueue (transform.parent.GetChild (_armIndex - 1).transform.position.x);
+			x = previousLinkXLocations.Dequeue () + (_armIndex * _arm.linksDistanceFactor * _arm.direction) ;
+			previousLinkYLocations.Enqueue (transform.parent.GetChild (_armIndex - 1).transform.position.y);
+			y = previousLinkYLocations.Dequeue ();
+		}
+		this.transform.position = new Vector2 (x, y);
+	}
 
-		/*
-		//TODO: fix rotation
-		float rotation = Mathf.Clamp(Mathf.Cos (move), -0.2f, 0.2f);
-		Quaternion oldRotation = this.transform.rotation;
-		this.transform.Rotate ( new Vector3(oldRotation.x,oldRotation.y,rotation));
-		*/
+	void FixedUpate(){
 
 
 	}
@@ -52,7 +54,6 @@ public class OctopusArmLink : MonoBehaviour {
 		_armIndex = transform.GetSiblingIndex ();
 		return _armIndex;
 	}
-
 
 
 }
