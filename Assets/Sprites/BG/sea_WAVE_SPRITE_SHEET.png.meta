@@ -1,53 +1,53 @@
 fileFormatVersion: 2
-guid: cbb39a6091753854eaebce132d259248
-timeCreated: 1485000302
+guid: 7678189f8677f014483f102a704cccf9
+timeCreated: 1485008718
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sea_WAVE_PNG_0
-    21300002: sea_WAVE_PNG_1
-    21300004: sea_WAVE_PNG_2
-    21300006: sea_WAVE_PNG_3
-    21300008: sea_WAVE_PNG_4
-    21300010: sea_WAVE_PNG_5
-    21300012: sea_WAVE_PNG_6
-    21300014: sea_WAVE_PNG_7
-    21300016: sea_WAVE_PNG_8
-    21300018: sea_WAVE_PNG_9
-    21300020: sea_WAVE_PNG_10
-    21300022: sea_WAVE_PNG_11
-    21300024: sea_WAVE_PNG_12
-    21300026: sea_WAVE_PNG_13
-    21300028: sea_WAVE_PNG_14
-    21300030: sea_WAVE_PNG_15
-    21300032: sea_WAVE_PNG_16
-    21300034: sea_WAVE_PNG_17
-    21300036: sea_WAVE_PNG_18
-    21300038: sea_WAVE_PNG_19
-    21300040: sea_WAVE_PNG_20
-    21300042: sea_WAVE_PNG_21
-    21300044: sea_WAVE_PNG_22
-    21300046: sea_WAVE_PNG_23
-    21300048: sea_WAVE_PNG_24
-    21300050: sea_WAVE_PNG_25
-    21300052: sea_WAVE_PNG_26
-    21300054: sea_WAVE_PNG_27
-    21300056: sea_WAVE_PNG_28
-    21300058: sea_WAVE_PNG_29
-    21300060: sea_WAVE_PNG_30
-    21300062: sea_WAVE_PNG_31
-    21300064: sea_WAVE_PNG_32
-    21300066: sea_WAVE_PNG_33
-    21300068: sea_WAVE_PNG_34
-    21300070: sea_WAVE_PNG_35
-    21300072: sea_WAVE_PNG_36
-    21300074: sea_WAVE_PNG_37
-    21300076: sea_WAVE_PNG_38
-    21300078: sea_WAVE_PNG_39
-    21300080: sea_WAVE_PNG_40
-    21300082: sea_WAVE_PNG_41
-    21300084: sea_WAVE_PNG_42
-    21300086: sea_WAVE_PNG_43
+    21300000: sea_WAVE_SPRITE_SHEET_7
+    21300002: sea_WAVE_SPRITE_SHEET_10
+    21300004: sea_WAVE_SPRITE_SHEET_11
+    21300006: sea_WAVE_SPRITE_SHEET_13
+    21300008: sea_WAVE_SPRITE_SHEET_14
+    21300010: sea_WAVE_SPRITE_SHEET_15
+    21300012: sea_WAVE_SPRITE_SHEET_17
+    21300014: sea_WAVE_SPRITE_SHEET_18
+    21300016: sea_WAVE_SPRITE_SHEET_19
+    21300018: sea_WAVE_SPRITE_SHEET_20
+    21300020: sea_WAVE_SPRITE_SHEET_21
+    21300022: sea_WAVE_SPRITE_SHEET_22
+    21300024: sea_WAVE_SPRITE_SHEET_23
+    21300026: sea_WAVE_SPRITE_SHEET_24
+    21300028: sea_WAVE_SPRITE_SHEET_25
+    21300030: sea_WAVE_SPRITE_SHEET_26
+    21300032: sea_WAVE_SPRITE_SHEET_27
+    21300034: sea_WAVE_SPRITE_SHEET_28
+    21300036: sea_WAVE_SPRITE_SHEET_30
+    21300038: sea_WAVE_SPRITE_SHEET_31
+    21300040: sea_WAVE_SPRITE_SHEET_32
+    21300042: sea_WAVE_SPRITE_SHEET_33
+    21300044: sea_WAVE_SPRITE_SHEET_34
+    21300046: sea_WAVE_SPRITE_SHEET_35
+    21300048: sea_WAVE_SPRITE_SHEET_36
+    21300050: sea_WAVE_SPRITE_SHEET_37
+    21300052: sea_WAVE_SPRITE_SHEET_38
+    21300054: sea_WAVE_SPRITE_SHEET_39
+    21300056: sea_WAVE_SPRITE_SHEET_40
+    21300058: sea_WAVE_SPRITE_SHEET_41
+    21300060: sea_WAVE_SPRITE_SHEET_42
+    21300062: sea_WAVE_SPRITE_SHEET_43
+    21300064: sea_WAVE_SPRITE_SHEET_44
+    21300066: sea_WAVE_SPRITE_SHEET_45
+    21300068: sea_WAVE_SPRITE_SHEET_46
+    21300070: sea_WAVE_SPRITE_SHEET_47
+    21300072: sea_WAVE_SPRITE_SHEET_48
+    21300074: sea_WAVE_SPRITE_SHEET_49
+    21300076: sea_WAVE_SPRITE_SHEET_50
+    21300078: sea_WAVE_SPRITE_SHEET_51
+    21300080: sea_WAVE_SPRITE_SHEET_52
+    21300082: sea_WAVE_SPRITE_SHEET_53
+    21300084: sea_WAVE_SPRITE_SHEET_54
+    21300086: sea_WAVE_SPRITE_SHEET_55
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -71,7 +71,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -79,12 +79,12 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 3000
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -114,572 +114,572 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sea_WAVE_PNG_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_1
-      rect:
-        serializedVersion: 2
-        x: 1171
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_2
-      rect:
-        serializedVersion: 2
-        x: 2342
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_3
-      rect:
-        serializedVersion: 2
-        x: 3513
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_4
-      rect:
-        serializedVersion: 2
-        x: 4684
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_5
-      rect:
-        serializedVersion: 2
-        x: 5855
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_6
+      name: sea_WAVE_SPRITE_SHEET_7
       rect:
         serializedVersion: 2
         x: 7026
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
+        y: 2415
+        width: 980
+        height: 524
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_7
+      name: sea_WAVE_SPRITE_SHEET_10
       rect:
         serializedVersion: 2
-        x: 8197
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
+        x: 9361
+        y: 2415
+        width: 974
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_8
+      name: sea_WAVE_SPRITE_SHEET_11
       rect:
         serializedVersion: 2
-        x: 9368
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
+        x: 10528
+        y: 2415
+        width: 974
+        height: 524
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_9
+      name: sea_WAVE_SPRITE_SHEET_13
       rect:
         serializedVersion: 2
-        x: 10539
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
+        x: 4698
+        y: 2415
+        width: 973
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_10
+      name: sea_WAVE_SPRITE_SHEET_14
       rect:
         serializedVersion: 2
-        x: 11710
-        y: 1748.25
-        width: 1156.7273
-        height: 582.75
+        x: 5860
+        y: 2415
+        width: 979
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_11
+      name: sea_WAVE_SPRITE_SHEET_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 8194
+        y: 2415
+        width: 973
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_12
+      name: sea_WAVE_SPRITE_SHEET_17
       rect:
         serializedVersion: 2
-        x: 1171
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 11690
+        y: 2415
+        width: 979
+        height: 521
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_13
+      name: sea_WAVE_SPRITE_SHEET_18
       rect:
         serializedVersion: 2
-        x: 2342
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 34
+        y: 2415
+        width: 974
+        height: 506
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_14
+      name: sea_WAVE_SPRITE_SHEET_19
       rect:
         serializedVersion: 2
-        x: 3513
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 1196
+        y: 2415
+        width: 979
+        height: 499
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_15
+      name: sea_WAVE_SPRITE_SHEET_20
       rect:
         serializedVersion: 2
-        x: 4684
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 2363
+        y: 2415
+        width: 979
+        height: 499
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_16
+      name: sea_WAVE_SPRITE_SHEET_21
       rect:
         serializedVersion: 2
-        x: 5855
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 3530
+        y: 2415
+        width: 974
+        height: 515
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_17
+      name: sea_WAVE_SPRITE_SHEET_22
       rect:
         serializedVersion: 2
-        x: 7026
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 34
+        y: 1677
+        width: 974
+        height: 519
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_18
+      name: sea_WAVE_SPRITE_SHEET_23
       rect:
         serializedVersion: 2
-        x: 8197
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 1196
+        y: 1677
+        width: 979
+        height: 537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_19
+      name: sea_WAVE_SPRITE_SHEET_24
       rect:
         serializedVersion: 2
-        x: 9368
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 2363
+        y: 1677
+        width: 979
+        height: 528
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_20
+      name: sea_WAVE_SPRITE_SHEET_25
       rect:
         serializedVersion: 2
-        x: 10539
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 3530
+        y: 1677
+        width: 974
+        height: 556
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_21
+      name: sea_WAVE_SPRITE_SHEET_26
       rect:
         serializedVersion: 2
-        x: 11710
-        y: 1166.25
-        width: 1156.7273
-        height: 582.75
+        x: 4698
+        y: 1677
+        width: 973
+        height: 549
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_22
+      name: sea_WAVE_SPRITE_SHEET_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        x: 5860
+        y: 1677
+        width: 979
+        height: 537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_23
-      rect:
-        serializedVersion: 2
-        x: 1171
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_24
-      rect:
-        serializedVersion: 2
-        x: 2342
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_25
-      rect:
-        serializedVersion: 2
-        x: 3513
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_26
-      rect:
-        serializedVersion: 2
-        x: 4684
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_27
-      rect:
-        serializedVersion: 2
-        x: 5855
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sea_WAVE_PNG_28
+      name: sea_WAVE_SPRITE_SHEET_28
       rect:
         serializedVersion: 2
         x: 7026
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        y: 1677
+        width: 980
+        height: 531
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_29
+      name: sea_WAVE_SPRITE_SHEET_30
       rect:
         serializedVersion: 2
-        x: 8197
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        x: 8194
+        y: 1677
+        width: 973
+        height: 556
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_30
+      name: sea_WAVE_SPRITE_SHEET_31
       rect:
         serializedVersion: 2
-        x: 9368
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        x: 9361
+        y: 1677
+        width: 974
+        height: 553
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_31
+      name: sea_WAVE_SPRITE_SHEET_32
       rect:
         serializedVersion: 2
-        x: 10539
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        x: 10528
+        y: 1677
+        width: 974
+        height: 538
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_32
+      name: sea_WAVE_SPRITE_SHEET_33
       rect:
         serializedVersion: 2
-        x: 11710
-        y: 584.25
-        width: 1156.7273
-        height: 582.75
+        x: 11690
+        y: 1677
+        width: 979
+        height: 519
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_33
+      name: sea_WAVE_SPRITE_SHEET_34
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 34
+        y: 940
+        width: 974
+        height: 517
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_34
+      name: sea_WAVE_SPRITE_SHEET_35
       rect:
         serializedVersion: 2
-        x: 1171
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 1196
+        y: 940
+        width: 979
+        height: 544
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_35
+      name: sea_WAVE_SPRITE_SHEET_36
       rect:
         serializedVersion: 2
-        x: 2342
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 2363
+        y: 940
+        width: 979
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_36
+      name: sea_WAVE_SPRITE_SHEET_37
       rect:
         serializedVersion: 2
-        x: 3513
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 3530
+        y: 940
+        width: 974
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_37
+      name: sea_WAVE_SPRITE_SHEET_38
       rect:
         serializedVersion: 2
-        x: 4684
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 4698
+        y: 940
+        width: 973
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_38
+      name: sea_WAVE_SPRITE_SHEET_39
       rect:
         serializedVersion: 2
-        x: 5855
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 5860
+        y: 940
+        width: 979
+        height: 530
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_39
+      name: sea_WAVE_SPRITE_SHEET_40
       rect:
         serializedVersion: 2
         x: 7026
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        y: 940
+        width: 980
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_40
+      name: sea_WAVE_SPRITE_SHEET_41
       rect:
         serializedVersion: 2
-        x: 8197
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 8194
+        y: 940
+        width: 976
+        height: 531
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_41
+      name: sea_WAVE_SPRITE_SHEET_42
       rect:
         serializedVersion: 2
-        x: 9368
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 9361
+        y: 940
+        width: 974
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_42
+      name: sea_WAVE_SPRITE_SHEET_43
       rect:
         serializedVersion: 2
-        x: 10539
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 10528
+        y: 940
+        width: 974
+        height: 499
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sea_WAVE_PNG_43
+      name: sea_WAVE_SPRITE_SHEET_44
       rect:
         serializedVersion: 2
-        x: 11710
-        y: 2.25
-        width: 1156.7273
-        height: 582.75
+        x: 11690
+        y: 940
+        width: 979
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 122
+        width: 974
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_46
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 122
+        width: 979
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_47
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 122
+        width: 979
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_48
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 122
+        width: 974
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_49
+      rect:
+        serializedVersion: 2
+        x: 4698
+        y: 122
+        width: 973
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_50
+      rect:
+        serializedVersion: 2
+        x: 5860
+        y: 122
+        width: 979
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_51
+      rect:
+        serializedVersion: 2
+        x: 7026
+        y: 122
+        width: 980
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_52
+      rect:
+        serializedVersion: 2
+        x: 8194
+        y: 122
+        width: 976
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_53
+      rect:
+        serializedVersion: 2
+        x: 9361
+        y: 122
+        width: 974
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_54
+      rect:
+        serializedVersion: 2
+        x: 10528
+        y: 122
+        width: 974
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_WAVE_SPRITE_SHEET_55
+      rect:
+        serializedVersion: 2
+        x: 11690
+        y: 122
+        width: 979
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
