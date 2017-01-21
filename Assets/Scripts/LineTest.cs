@@ -8,20 +8,30 @@ public class LineTest : MonoBehaviour {
 	public int points = 30;
 	public float r = 0.2f;
 	public float xSpeed = 0.2f;
+	public float heightFactor = 2f;
 	public List<float> yHistory = new List<float>(); 
+	public GameObject linkPrefab;
+	private GameObject[] links;
+	public int diretion = 1;
 
 	// Use this for initialization
 	void Start () {
+		links = new GameObject[points];
 		for (int i = 0; i < points; i++) {
 			yHistory.Add(this.transform.position.y);
+			GameObject currLink = (GameObject)GameObject.Instantiate (linkPrefab, this.transform.position, Quaternion.identity);
+			links [i] = currLink;
+			currLink.transform.parent = this.transform;
 		}
+
+
 		lr = GetComponent<LineRenderer> ();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		float x0 = assertFloat(0f); 
-		float y0 = assertFloat(Mathf.Sin (Time.time * xSpeed) % (Mathf.PI * 2));
+		float y0 = heightFactor * (Mathf.Sin (Time.time * xSpeed) % (Mathf.PI * 2));
 		Vector3[] newPositions = new Vector3[points];
 		//lt.SetPosition (0, new Vector3 (x0, y0, 0f));
 		newPositions[0] = new Vector3 (x0, y0, 0f);
@@ -32,6 +42,7 @@ public class LineTest : MonoBehaviour {
 			yi = assertFloat(yHistory [i - 1]);
 			//xi = calcX1 (lr.GetPosition(i-1).x, r, lr.GetPosition(i-1).y, yi);
 			xi = calcX1 (newPositions[i-1].x, r, newPositions[i-1].y, yi);
+			links [i].transform.position = new Vector3 (xi, yi, zi);
 			newPositions[i] = new Vector3 (xi, yi, zi);
 		}
 		lr.SetVertexCount (points);
@@ -48,12 +59,22 @@ public class LineTest : MonoBehaviour {
 	}
 
 	private void UpdateMovemetVars(){
-		if(Input.GetKey(KeyCode.A)){
-			xSpeed = Mathf.Clamp(xSpeed - 0.05f, 0f, 2f);
+		if(diretion ==1 ){ //right arm
+			if (Input.GetKey (KeyCode.D)) {
+				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
+			} else {
+				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
+			}
 		}
-		if(Input.GetKey(KeyCode.D)){
-			xSpeed = Mathf.Clamp(xSpeed + 0.05f, 0f, 2f);
+		else if(diretion ==-1 ){ //left arm
+			if (Input.GetKey (KeyCode.A)) {
+				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
+
+			} else {
+				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
+			}
 		}
+
 	}
 
 	private float assertFloat(float num){
