@@ -27,11 +27,11 @@ public class CharacterSpawnInstructions {
 		float growthRate, 
 		float decelrationRate){
 
-		characterType = characterType; 
-		launchTime = launchTime; 
-		startPosition = new Vector3 (x, y, z);
-		growthRate = growthRate; 
-		decelrationRate = decelrationRate;
+		this.characterType = characterType; 
+		this.launchTime = launchTime; 
+		this.startPosition = new Vector3 (x, y, z);
+		this.growthRate = growthRate; 
+		this.decelrationRate = decelrationRate;
 	}
 
 

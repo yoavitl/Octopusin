@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 		health = 3f;
 
 		setExampleLevels ();
+		Debug.Log (level1[1].characterType);
 		_characters = GameObject.Find ("Characters");
 		if (isDemo) {
 			LaunchLevel (level1);
@@ -38,8 +39,8 @@ public class GameManager : MonoBehaviour {
 
 	private void setExampleLevels(){
 		level1 = new List<CharacterSpawnInstructions> ();
-		level1.Add (new CharacterSpawnInstructions(CharacterSpawnInstructions.POINT1, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(CharacterSpawnInstructions.ENEMY1, 5f, -2f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 5f, -2f, -2.2f, 15f, 0.1f, 0.1f));
 		/*level1.Add (new KeyValuePair<int, float> (ENEMY2, 6f));
 		level1.Add (new KeyValuePair<int, float> (STATIC2, 10f));
 		level1.Add (new KeyValuePair<int, float> (ENEMY3, 12f));
@@ -50,7 +51,14 @@ public class GameManager : MonoBehaviour {
 		level1.Add (new KeyValuePair<int, float> (POINT3, 17f));
 		level1.Add (new KeyValuePair<int, float> (STATIC3, 18f));
 		level1.Add (new KeyValuePair<int, float> (ENEMY2, 21f));
-		level1.Add (new KeyValuePair<int, float> (ENEMY2, 22f));*/
+		level1.Add (new KeyValuePair<int, float> (ENEMY2, 22f));
+
+int characterType, 
+		float launchTime, 
+		float x, float y, float z, 
+		float growthRate, 
+		float decelrationRate){
+		*/
 	}
 
 	private void LaunchLevel(List<CharacterSpawnInstructions> levelDescription){
