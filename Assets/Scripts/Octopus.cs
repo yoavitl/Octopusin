@@ -7,10 +7,10 @@ public class Octopus : MonoBehaviour {
 	private HashSet<int> hurt;
 	private shakeyCam sc;
 	private GameManager _score;
-	private float maxY = 2f;
+	private float maxY = 6f;
 	private float CameraMaxY = 3.15f;
-	private float CameraMinY = -3f;
-	private float minY = -3f;
+	private float CameraMinY = -2f;
+	private float minY = -7f;
 	public float smoothTime = 1F;
 	private Vector3 velocity = Vector3.zero;
 	private Camera cam;
@@ -37,7 +37,7 @@ public class Octopus : MonoBehaviour {
 		}
 		else if (Input.GetKey (KeyCode.S)) { //down
 			Vector3 targetPosition = new Vector3(transform.position.x, minY, transform.position.z);
-			Vector3 CameraTargetPosition = new Vector3(cam.transform.position.x, CameraMinY, cam.transform.position.z);
+			Vector3 CameraTargetPosition = new Vector3(cam.transform.position.x, CameraMinY, cam.transform	.position.z);
 			transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 			cam.transform.position = Vector3.SmoothDamp(cam.transform.position, CameraTargetPosition, ref velocity, smoothTime);
 		}

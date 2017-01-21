@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour {
 
 	private void setExampleLevels(){
 		level1 = new List<CharacterSpawnInstructions> ();
-		/*level1.Add (new CharacterSpawnInstructions(5, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(3, 5f, -2f, -2.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(5, 9f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(5, 10f, 2f, -0.2f, 15f, 0.1f, 0.1f));
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
 		level1.Add (new CharacterSpawnInstructions(5, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(5, 6.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(5, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(5, 6.4f, 2f, -0.2f, 15f, 0.1f, 0.1f));*/
+		level1.Add (new CharacterSpawnInstructions(5, 6.4f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		/*level1.Add (new KeyValuePair<int, float> (ENEMY2, 6f));
 		level1.Add (new KeyValuePair<int, float> (STATIC2, 10f));
 		level1.Add (new KeyValuePair<int, float> (ENEMY3, 12f));
@@ -86,9 +86,9 @@ int characterType,
 			//print ("adding point " + id + " in " + delay + " seconds");
 			yield return new WaitForSeconds (csi.launchTime);
 			GameObject go = (GameObject)GameObject.Instantiate (characterPrefabs [csi.characterType], csi.startPosition, Quaternion.identity);
-			//movingObj mo = go.GetComponent<movingObj> ();
-			//mo.growthRate = csi.growthRate; 
-			//mo.decelrationRate = csi.decelrationRate;
+			movingObj mo = go.GetComponent<movingObj> ();
+			mo.growthRate = -csi.growthRate; 
+			mo.decelrationRate = csi.decelrationRate;
 			go.transform.parent = _characters.transform;
 		} else {
 			// Lost / Paused
