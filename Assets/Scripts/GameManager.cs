@@ -41,38 +41,34 @@ public class GameManager : MonoBehaviour {
 
 	private void setExampleLevels(){
 		level1 = new List<CharacterSpawnInstructions> ();
-		level1.Add (new CharacterSpawnInstructions(0, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(1, 5f, -2f, -2.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(2, 9f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(0, 10f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(1, 7f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(2, 4f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(0, 6f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(1, 6.1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(2, 6.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(3, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(4, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(5, 6.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(6, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(3, 6.4f, 2f, -0.2f, 15f, 0.1f, 0.1f));
-		/*level1.Add (new KeyValuePair<int, float> (ENEMY2, 6f));
-		level1.Add (new KeyValuePair<int, float> (STATIC2, 10f));
-		level1.Add (new KeyValuePair<int, float> (ENEMY3, 12f));
-		level1.Add (new KeyValuePair<int, float> (STATIC3, 13f));
-		level1.Add (new KeyValuePair<int, float> (STATIC2, 15f));
-		level1.Add (new KeyValuePair<int, float> (POINT2, 16f));
-		level1.Add (new KeyValuePair<int, float> (POINT2, 17f));
-		level1.Add (new KeyValuePair<int, float> (POINT3, 17f));
-		level1.Add (new KeyValuePair<int, float> (STATIC3, 18f));
-		level1.Add (new KeyValuePair<int, float> (ENEMY2, 21f));
-		level1.Add (new KeyValuePair<int, float> (ENEMY2, 22f));
-
-int characterType, 
-		float launchTime, 
-		float x, float y, float z, 
-		float growthRate, 
-		float decelrationRate){
-		*/
+		level1.Add (new CharacterSpawnInstructions(0, 1f, 1f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 5f, -3f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 9f, 4f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 10f, 3f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 11f, 4f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 14f, 0f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 16f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 16.1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 18.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 20.3f, 2f, -1.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(4, 22.3f, 2f, -4.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 23.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(6, 26.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 28f, 2f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 31f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 35f, -2f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 39f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 40f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 41f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 42f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 43f, 2f, -3.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 43.1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 43.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 44.3f, 2f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 44.3f, 2f, -1.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 44.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(6, 45.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(3, 45.4f, 2f, -1.2f, 15f, 0.1f, 0.1f));
 	}
 
 	private void LaunchLevel(List<CharacterSpawnInstructions> levelDescription){
