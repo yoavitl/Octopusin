@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] characterPrefabs;
 	public float startingDistance = 30f;
 	public Text scoreBoard;
+	public Image[] images;
+	public int i = 2;
 
 	public int Score;
 	public float health; 
@@ -21,15 +24,14 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		Score = 0;
 		health = 3f;
-
 		setExampleLevels ();
-		Debug.Log (level1[1].characterType);
 		_characters = GameObject.Find ("Characters");
 		if (isDemo) {
 			LaunchLevel (level1);
 		} else {
 			//TODO: real levels
 		}
+
 	}
 	
 	// Update is called once per frame
@@ -41,6 +43,18 @@ public class GameManager : MonoBehaviour {
 		level1 = new List<CharacterSpawnInstructions> ();
 		level1.Add (new CharacterSpawnInstructions(5, 1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(3, 5f, -2f, -2.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 9f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 10f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 7f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 4f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.1f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.2f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.3f, 2f, -0.2f, 15f, 0.1f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(5, 6.4f, 2f, -0.2f, 15f, 0.1f, 0.1f));
 		/*level1.Add (new KeyValuePair<int, float> (ENEMY2, 6f));
 		level1.Add (new KeyValuePair<int, float> (STATIC2, 10f));
 		level1.Add (new KeyValuePair<int, float> (ENEMY3, 12f));
@@ -90,6 +104,21 @@ int characterType,
 	public void RemoveLife ()
 	{
 		health -= 0.25f;
+		if (health < 0.25f) {
+			
+			SceneManager.LoadScene ("GameOver");
+		}
+		Color c = images[i].color;
+		if (c.a > 0) {
+			c.a -= 0.25f;
+			images [i].color = c;
+		} else if (c.a == 0) { 
+			i -= 1;
+			c = images[i].color;
+			c.a -= 0.25f;
+			images [i].color = c;
+		}
+			
 		Debug.Log ("Current health = " + health);
 	}
 
