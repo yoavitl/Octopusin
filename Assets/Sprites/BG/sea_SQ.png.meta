@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: 7d08ba5fd956ced4fafa05fbac63544b
+timeCreated: 1485000864
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sea_SQ_0
+    21300002: sea_SQ_1
+    21300004: sea_SQ_2
+    21300006: sea_SQ_3
+    21300008: sea_SQ_4
+    21300010: sea_SQ_5
+    21300012: sea_SQ_6
+    21300014: sea_SQ_7
+    21300016: sea_SQ_8
+    21300018: sea_SQ_9
+    21300020: sea_SQ_10
+    21300022: sea_SQ_11
+    21300024: sea_SQ_12
+    21300026: sea_SQ_13
+    21300028: sea_SQ_14
+    21300030: sea_SQ_15
+    21300032: sea_SQ_16
+    21300034: sea_SQ_17
+    21300036: sea_SQ_18
+    21300038: sea_SQ_19
+    21300040: sea_SQ_20
+    21300042: sea_SQ_21
+    21300044: sea_SQ_22
+    21300046: sea_SQ_23
+    21300048: sea_SQ_24
+    21300050: sea_SQ_25
+    21300052: sea_SQ_26
+    21300054: sea_SQ_27
+    21300056: sea_SQ_28
+    21300058: sea_SQ_29
+    21300060: sea_SQ_30
+    21300062: sea_SQ_31
+    21300064: sea_SQ_32
+    21300066: sea_SQ_33
+    21300068: sea_SQ_34
+    21300070: sea_SQ_35
+    21300072: sea_SQ_36
+    21300074: sea_SQ_37
+    21300076: sea_SQ_38
+    21300078: sea_SQ_39
+    21300080: sea_SQ_40
+    21300082: sea_SQ_41
+    21300084: sea_SQ_42
+    21300086: sea_SQ_43
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sea_SQ_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1748.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_1
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1748.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_2
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 1748.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_3
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 1748
+        width: 1151
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_4
+      rect:
+        serializedVersion: 2
+        x: 4691
+        y: 1748
+        width: 1154
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_5
+      rect:
+        serializedVersion: 2
+        x: 5874
+        y: 1748
+        width: 1143
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_6
+      rect:
+        serializedVersion: 2
+        x: 7044
+        y: 1748
+        width: 1147
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_7
+      rect:
+        serializedVersion: 2
+        x: 8218
+        y: 1748
+        width: 1143
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_8
+      rect:
+        serializedVersion: 2
+        x: 9395
+        y: 1748
+        width: 1143
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_9
+      rect:
+        serializedVersion: 2
+        x: 10568
+        y: 1748
+        width: 1125
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_10
+      rect:
+        serializedVersion: 2
+        x: 11737
+        y: 1748
+        width: 1125
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_12
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1166.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_13
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 1166.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_14
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 1166
+        width: 1149
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_15
+      rect:
+        serializedVersion: 2
+        x: 4698
+        y: 1166
+        width: 1144
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_16
+      rect:
+        serializedVersion: 2
+        x: 5870
+        y: 1166
+        width: 1145
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_17
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 1166
+        width: 1152
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_18
+      rect:
+        serializedVersion: 2
+        x: 8216
+        y: 1166
+        width: 1145
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_19
+      rect:
+        serializedVersion: 2
+        x: 9391
+        y: 1166
+        width: 1149
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_20
+      rect:
+        serializedVersion: 2
+        x: 10565
+        y: 1166
+        width: 1128
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_21
+      rect:
+        serializedVersion: 2
+        x: 11739
+        y: 1166
+        width: 1124
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 590
+        width: 1154
+        height: 577
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_23
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 589
+        width: 1154
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_24
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 588
+        width: 1154
+        height: 579
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_25
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 590
+        width: 1148
+        height: 577
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_26
+      rect:
+        serializedVersion: 2
+        x: 4696
+        y: 591
+        width: 1148
+        height: 576
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_27
+      rect:
+        serializedVersion: 2
+        x: 5868
+        y: 589
+        width: 1147
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_28
+      rect:
+        serializedVersion: 2
+        x: 7044
+        y: 589
+        width: 1143
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_29
+      rect:
+        serializedVersion: 2
+        x: 8218
+        y: 589
+        width: 1144
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_30
+      rect:
+        serializedVersion: 2
+        x: 9393
+        y: 589
+        width: 1145
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_31
+      rect:
+        serializedVersion: 2
+        x: 10563
+        y: 593
+        width: 1130
+        height: 574
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_32
+      rect:
+        serializedVersion: 2
+        x: 11737
+        y: 589
+        width: 1127
+        height: 578
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_34
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 2.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_35
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 2.25
+        width: 1153.7273
+        height: 582.75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_36
+      rect:
+        serializedVersion: 2
+        x: 3517
+        y: 2
+        width: 1150
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_37
+      rect:
+        serializedVersion: 2
+        x: 4693
+        y: 2
+        width: 1151
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_38
+      rect:
+        serializedVersion: 2
+        x: 5869
+        y: 2
+        width: 1139
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_39
+      rect:
+        serializedVersion: 2
+        x: 7026
+        y: 2
+        width: 1165
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_40
+      rect:
+        serializedVersion: 2
+        x: 8223
+        y: 2
+        width: 1138
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_41
+      rect:
+        serializedVersion: 2
+        x: 9389
+        y: 2
+        width: 1147
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_42
+      rect:
+        serializedVersion: 2
+        x: 10565
+        y: 2
+        width: 1127
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sea_SQ_43
+      rect:
+        serializedVersion: 2
+        x: 11737
+        y: 2
+        width: 1126
+        height: 583
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
