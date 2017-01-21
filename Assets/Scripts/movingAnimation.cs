@@ -5,15 +5,18 @@ using UnityEngine;
 public class movingAnimation : MonoBehaviour {
 	private Transform _transform;
 	public Camera cam;
+	private Animator animator;
 
 	public double GetAngle(Vector2 a, Vector2 b)
 	{
 		double angle = Mathf.Atan2 (a.y - b.y, a.x - b.x);
+		animator.SetFloat ("camAngle", (float)angle);
 		//Debug.Log (angle);
 		return angle;
 	}
 
 	void Start () {
+		animator = GetComponent<Animator> ();
 		cam = Camera.main;
 		_transform = this.transform;
 	}
