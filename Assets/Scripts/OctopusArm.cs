@@ -5,9 +5,10 @@ using UnityEngine;
 public class OctopusArm : MonoBehaviour {
 
 	public int direction = 1; 
-	public int delay = 20;
-	public float slowFactor = 0.5f;
-	public float linksDistanceFactor = 0.01f;
+	public int delay = 10;
+	public float linkDistance = 0.25f;
+	public float slowFactor = 0.7f;
+	public float linksDistanceFactor = 0.05f;
 	public float heightFactor = 0.9f;
 	public float HeightIncreaseSpeed = 0.005f;
 	public float HeightDecreaseSpeed = 0.1f;
@@ -16,7 +17,9 @@ public class OctopusArm : MonoBehaviour {
 	public float DistanceIncreaseSpeed = 0.1f; 
 	public float DistanceDecreaseSpeed = 0.005f; 
 	public float minDistance = 0.1f; 
-	public float maxDistance = 1f; 
+	public float maxDistance = 10f; 
+	public List<float> history = new List<float>();
+	private OctopusArmLink _firstChild;
 
 	private const KeyCode RIGHT = KeyCode.D;
 	private const KeyCode LEFT = KeyCode.A;
@@ -24,11 +27,21 @@ public class OctopusArm : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		resetHistory ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		SetMovementConstants ();
+		history.Insert (0, _firstChild.transform.position.y);
+		history.RemoveAt (history.Count-1);
+	}
+
+	void FixedUpdate() {
+
+	}
+
+	private void SetMovementConstants(){
 		if (direction == 1) {
 			if (Input.GetKey(RIGHT)) {
 				linksDistanceFactor = Mathf.Clamp(linksDistanceFactor + DistanceIncreaseSpeed, minDistance, maxDistance);
@@ -49,8 +62,13 @@ public class OctopusArm : MonoBehaviour {
 		}
 	}
 
-	void FixedUpdate() {
-
+	void resetHistory(){
+		_firstChild = GetComponentsInChildren<OctopusArmLink> () [0];
+		int childNum = transform.childCount;
+		int historyLength = childNum * delay;
+		for (int i = 0; i < historyLength; i++) {
+			history.Insert (0,_firstChild.transform.position.y);
+		}
 	}
 
 		

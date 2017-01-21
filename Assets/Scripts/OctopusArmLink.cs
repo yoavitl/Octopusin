@@ -5,22 +5,14 @@ using UnityEngine;
 public class OctopusArmLink : MonoBehaviour {
 
 
-	private int _armIndex;
+	private int _linkIndex;
 	private OctopusArm _arm; 
-	
-	public Queue<float> previousLinkYLocations; 
-	public Queue<float> previousLinkXLocations; 
 
 	// Use this for initialization
 	void Start () {
 		updateIndex ();
 		_arm = GetComponentInParent<OctopusArm> ();
-		previousLinkXLocations = new Queue<float>();
-		previousLinkYLocations = new Queue<float>();
-		for (int i = 0; i < _arm.delay; i++) {
-			previousLinkYLocations.Enqueue(transform.position.y);
-			previousLinkYLocations.Enqueue(transform.position.x);
-		}
+
 	}
 
 	public void updateFromArm(){
@@ -31,15 +23,20 @@ public class OctopusArmLink : MonoBehaviour {
 	void Update () {
 		updateIndex ();
 		float x, y;
-		if (_armIndex == 0) {
+		if (_linkIndex == 0) {
 			x = _arm.direction;
 			float h = (Time.time / _arm.slowFactor) % (2f * Mathf.PI);
 			y = Mathf.Sin (h) * _arm.heightFactor;
 		} else {
-			previousLinkXLocations.Enqueue (transform.parent.GetChild (_armIndex - 1).transform.position.x);
-			x = previousLinkXLocations.Dequeue () + (_armIndex * _arm.linksDistanceFactor * _arm.direction) ;
-			previousLinkYLocations.Enqueue (transform.parent.GetChild (_armIndex - 1).transform.position.y);
-			y = previousLinkYLocations.Dequeue ();
+			float x2 = transform.parent.transform.GetChild (_linkIndex - 1).transform.position.x;
+			float y2 = transform.parent.transform.GetChild (_linkIndex - 1).transform.position.y;
+			y = _arm.history [_linkIndex * _arm.delay]; 
+			float sqrtContent = 
+				Mathf.Pow (_arm.linkDistance, 2f)- 
+				Mathf.Pow ((y - y2), 2f);
+			
+			//x = Mathf.Sqrt (sqrtContent) + Mathf.Pow (x2, 2f);
+			x = _arm.direction * _linkIndex * _arm.linksDistanceFactor;
 		}
 		this.transform.position = new Vector2 (x, y);
 	}
@@ -51,8 +48,8 @@ public class OctopusArmLink : MonoBehaviour {
 
 
 	public int updateIndex(){
-		_armIndex = transform.GetSiblingIndex ();
-		return _armIndex;
+		_linkIndex = transform.GetSiblingIndex ();
+		return _linkIndex;
 	}
 
 
