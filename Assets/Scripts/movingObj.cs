@@ -6,6 +6,7 @@ public class movingObj : MonoBehaviour {
 	public Camera cam;
 	private Transform _transform;
 	public float growthRate;
+	public float decelrationRate;
 
 	void Start () {
 		_transform = this.transform;
@@ -13,10 +14,9 @@ public class movingObj : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.anyKeyDown) { 
-			_transform.localPosition = new Vector3 (_transform.position.x, _transform.position.y, _transform.position.z + 1);
-			_transform.localScale += new Vector3 (1F * growthRate , 1F * growthRate, 0);
-		}
+		_transform.localPosition = new Vector3 (_transform.position.x, _transform.position.y, _transform.position.z + growthRate/decelrationRate);
+		_transform.localScale += new Vector3 (growthRate/100 , growthRate/100, 0);
+
 		if (_transform.position.z > cam.transform.position.z) 
 			Destroy (gameObject);	
 	}
