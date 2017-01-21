@@ -39,10 +39,9 @@ public class Octopus : MonoBehaviour {
 	public void Hit(Collider other){
 		if (!hurt.Contains (other.GetInstanceID ())) {
 			hurt.Add (other.GetInstanceID ());
-		
 			if (other.tag == "Point") {
 				Debug.Log ("add a point");
-				_score.AddScore (1);
+				_score.AddScore (10);
 			} else if (other.tag == "Enemy") {
 				Debug.Log ("Remove Life");
 				sc.Shake ();
