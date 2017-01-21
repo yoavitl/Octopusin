@@ -6,7 +6,6 @@ using UnityEngine;
 public class OctopusCollider : MonoBehaviour {
 
 	private Octopus _octopus; 
-
 	// Use this for initialization
 	void Start () {
 		_octopus = GetComponentInParent<Octopus> ();
@@ -19,10 +18,9 @@ public class OctopusCollider : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if(other.tag != "Player"){
+		if (other.tag != "Player") {
 			_octopus.Hit (other);
 		}
 	}
-
-
+		
 }
