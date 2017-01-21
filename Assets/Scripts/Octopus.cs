@@ -7,11 +7,11 @@ public class Octopus : MonoBehaviour {
 	private HashSet<int> hurt;
 	private shakeyCam sc;
 	private GameManager _score;
-	private float maxY = 6f;
-	private float CameraMaxY = 3.15f;
-	private float CameraMinY = -2f;
-	private float minY = -7f;
-	public float smoothTime = 1F;
+	private float maxY = 10f;
+	private float CameraMaxY = 4.5f;
+	private float CameraMinY = -4f;
+	private float minY = -10f;
+	public float smoothTime = 2F;
 	private Vector3 velocity = Vector3.zero;
 	private Camera cam;
 
