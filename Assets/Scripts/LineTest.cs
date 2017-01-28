@@ -8,7 +8,7 @@ public class LineTest : MonoBehaviour {
 	public int points = 30;
 	public float r = 0.2f;
 	public float xSpeed = 0.2f;
-	public float heightFactor = 3f;
+	public float heightFactor = 1f;
 	public List<float> yHistory = new List<float>(); 
 	public GameObject linkPrefab;
 	private GameObject[] links;
@@ -62,19 +62,19 @@ public class LineTest : MonoBehaviour {
 		if(diretion ==1 ){ //right arm
 			if (Input.GetKey (KeyCode.A)) {
 				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.1f, 6f);
+				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.9f, 1.1f);
 			} else {
 				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.1f, 6f);
+				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.9f, 1.1f);
 			}
 		}
 		else if(diretion ==-1 ){ //left arm
 			if (Input.GetKey (KeyCode.D)) {
 				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.1f, 6f);
+				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.9f, 1.1f);
 			} else {
 				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.1f, 6f);
+				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.9f, 1.1f);
 			}
 		}
 

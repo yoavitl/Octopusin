@@ -7,11 +7,12 @@ public class Octopus : MonoBehaviour {
 	private HashSet<int> hurt;
 	private shakeyCam sc;
 	private GameManager _score;
-	private float maxY = 10f;
-	private float CameraMaxY = 4.5f;
-	private float CameraMinY = -4f;
+	private float maxY = 5f;
+	private float CameraMaxY = 1f;
+	private float CameraMinY = -1f;
 	private float minY = -10f;
 	public float smoothTime = 2F;
+	public float camRotationSpeed = 1f;
 	private Vector3 velocity = Vector3.zero;
 	private Camera cam;
 
@@ -41,6 +42,7 @@ public class Octopus : MonoBehaviour {
 			transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 			cam.transform.position = Vector3.SmoothDamp(cam.transform.position, CameraTargetPosition, ref velocity, smoothTime);
 		}
+
 	}
 
 

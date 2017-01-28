@@ -41,14 +41,14 @@ public class GameManager : MonoBehaviour {
 
 	private void setExampleLevels(){
 		level1 = new List<CharacterSpawnInstructions> ();
-		level1.Add (new CharacterSpawnInstructions(0, 1f, 1f, -0.2f, 15f, 0.01f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(1, 5f, -3f, -2.2f, 15f, 0.01f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 1f, 1f, -1f, 15f, 0.01f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 5f, -3f, -1f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(3, 9f, 4f, -2.2f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(0, 10f, 3f, -0.2f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(1, 11f, 4f, -0.2f, 15f, 0.01f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(2, 14f, 0f, -0.2f, 15f, 0.01f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(0, 16f, 2f, -0.2f, 15f, 0.01f, 0.1f));
-		level1.Add (new CharacterSpawnInstructions(1, 16.1f, 2f, -0.2f, 15f, 0.01f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(2, 14f, 0f, -1f, 15f, 0.01f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(0, 16f, 2f, -1f, 15f, 0.01f, 0.1f));
+		level1.Add (new CharacterSpawnInstructions(1, 16.1f, 2f, -1f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(2, 18.2f, 2f, -0.2f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(3, 20.3f, 2f, -1.2f, 15f, 0.01f, 0.1f));
 		level1.Add (new CharacterSpawnInstructions(4, 22.3f, 2f, -4.2f, 15f, 0.01f, 0.1f));
