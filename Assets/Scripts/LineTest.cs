@@ -7,8 +7,13 @@ public class LineTest : MonoBehaviour {
 	private LineRenderer lr; 
 	public int points = 30;
 	public float r = 0.2f;
+	public float minR = 0.1f; 
+	public float maxR = 0.5f; 
+	public float rStep = 0.05f;
+
 	public float xSpeed = 0.2f;
 	public float heightFactor = 1f;
+
 	public List<float> yHistory = new List<float>(); 
 	public GameObject linkPrefab;
 	private GameObject[] links;
@@ -59,22 +64,26 @@ public class LineTest : MonoBehaviour {
 	}
 
 	private void UpdateMovemetVars(){
-		if(diretion ==1 ){ //right arm
-			if (Input.GetKey (KeyCode.A)) {
-				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.9f, 1.1f);
-			} else {
-				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.9f, 1.1f);
-			}
-		}
-		else if(diretion ==-1 ){ //left arm
+		if(diretion == 1 ){ //right arm
 			if (Input.GetKey (KeyCode.D)) {
 				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.9f, 1.1f);
+				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.8f, 1.2f);
+				r = Mathf.Clamp (r + rStep, minR, maxR);
 			} else {
-				xSpeed = Mathf.Clamp (xSpeed - 0.005f, 0f, 2f);
-				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.9f, 1.1f);
+				xSpeed = Mathf.Clamp (xSpeed - 0.05f, 0f, 2f);
+				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.8f, 1.2f);
+				r = Mathf.Clamp (r - rStep, minR, maxR);
+			}
+		}
+		else if(diretion == -1){ //left arm
+			if (Input.GetKey (KeyCode.A)) {
+				xSpeed = Mathf.Clamp (xSpeed + 0.01f, 0f, 2f);
+				heightFactor = Mathf.Clamp (heightFactor - 0.05f, 0.8f, 1.2f);
+				r = Mathf.Clamp (r + rStep, minR, maxR);
+			} else {
+				xSpeed = Mathf.Clamp (xSpeed - 0.05f, 0f, 2f);
+				heightFactor = Mathf.Clamp (heightFactor + 0.05f, 0.8f, 1.2f);
+				r = Mathf.Clamp (r - rStep, minR, maxR);
 			}
 		}
 
